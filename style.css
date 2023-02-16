@@ -1,5 +1,6 @@
 :root {
     --bg-color: #38352e;
+    --light-bg-color: #544B34;
 }
 
 @font-face {
@@ -66,18 +67,20 @@ form {
     flex-wrap: wrap;
     max-width: 450px;
     gap: 20px;
+    padding-bottom: 10px;
 }
 
 input {
     background-color: transparent;
-    border: 1px solid var(--bg-color);
+    border: 1px solid var(--light-bg-color);
     border-radius: 3px;
     padding: 3px 6px;
+    height: 20px;
 }
 
 input:focus {
     outline: none;
-    border: 1px solid #4C8076;
+    border: 1px solid var(--light-bg-color);
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
@@ -100,7 +103,7 @@ label {
 }
 
 button {
-    background-color: var(--bg-color);
+    background-color: var(--light-bg-color);
     border: none;
     color: white;
     padding: 15px 30px;
@@ -125,7 +128,7 @@ header {
     flex-direction: column-reverse;
     gap: 30px;
     max-width: 600px;
-    padding: 30px;
+    padding: 50px 30px;
     height: 100%;
 }
 
@@ -135,4 +138,10 @@ footer {
     gap: 30px;
     padding: 30px;
     height: 100%;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-bg-color);
 }
