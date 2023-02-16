@@ -22,35 +22,35 @@
             </header>
             <div class="form">
                 <p>Let's do this!</p>
-                <form action="example.com/path" method="post">
+                <form action="" method="post" id="register">
                     <p>
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name"/>
+                        <label for="first_name">FIRST NAME*</label>
+                        <input type="text" name="first_name" id="first_name" required/>
                     </p>
                     <p>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email"/>
+                        <label for="last_name">LAST NAME*</label>
+                        <input type="text" name="last_name" id="last_name" required/>
                     </p>
                     <p>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password"/>
-                    </p>
-                    <p>
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name"/>
+                        <label for="email">EMAIL*</label>
+                        <input type="email" name="email" id="email" required/>
                     </p>
                     <p>
                         <label for="telephone">PHONE NUMBER</label>
                         <input type="tel" name="telephone" id="telephone"/>
                     </p>
                     <p>
-                        <label for="password_confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="password_confirm">
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" name="password" id="password" required/>
+                    </p>
+                    <p>
+                        <label for="password_confirm">CONFIRM PASSWORD*</label>
+                        <input type="password" name="password_confirm" required/>
                     </p>
                 </form>
             </div>
             <footer>
-                <button type="submit">Create Account</button>
+                <button type="submit" form="register">Create Account</button>
                 <p>Already have an account? Log in</p>
             </footer>
         </div>
