@@ -22,7 +22,7 @@ body {
 main {
     display: flex;
     height: min(900px, 80vh);
-    width: min(1500px, 100vh);
+    width: min(1200px, 80vw);
 }
 
 .sidePanel {
@@ -145,3 +145,8 @@ a {
     text-decoration: none;
     color: var(--light-bg-color);
 }
+
+.error {
+    border: 1px solid red;
+}
+

@@ -39,14 +39,15 @@
                         <label for="telephone">PHONE NUMBER</label>
                         <input type="tel" name="telephone" id="telephone"/>
                     </p>
-                    <p>
+                    <p class="passwordError">
                         <label for="password">PASSWORD*</label>
-                        <input type="password" name="password" id="password" class="error" required/>
+                        <input type="password" name="password" id="password" onkeyup="check();" required/>
                     </p>
                     <p>
-                        <label for="password_confirm">CONFIRM PASSWORD*</label>
-                        <input type="password" name="password_confirm" class="error" required/>
+                        <label for="confirm_password">CONFIRM PASSWORD*</label>
+                        <input type="password" name="confirm_password" id="confirm_password" onkeyup="check();" required/>
                     </p>
+                    
                 </form>
             </div>
             <footer>
