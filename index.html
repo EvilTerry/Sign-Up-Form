@@ -22,8 +22,28 @@
             </header>
             <div class="form">
                 <p>Let's do this!</p>
+                <form action="example.com/path" method="post">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name"/>
+
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name"/>
+
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email"/>
+
+                    <label for="telephone">PHONE NUMBER</label>
+                    <input type="tel" name="telephone" id="telephone"/>
+
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password"/>
+                    
+                    <label for="password_confirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="password_confirm">
+                </form>
             </div>
             <footer>
+                <button type="submit">Create Account</button>
                 <p>Already have an account? Log in</p>
             </footer>
         </div>
