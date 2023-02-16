@@ -1,0 +1,53 @@
+:root {
+    --bg-color: #38352e;
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url(resources/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+main {
+    display: flex;
+    height: 600px;
+}
+
+.sidePanel {
+    background-image: url("resources/agto-nugroho-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: NorseBold;
+    font-size: 50px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.formPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(249, 250, 251, 0.5);
+    width: 500px;
+    height: 100%;
+}
+
+.form {
+    background-color: rgb(255, 255, 255, 0.5);
+}
