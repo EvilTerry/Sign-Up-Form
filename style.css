@@ -29,12 +29,15 @@ main {
     background-image: url("resources/agto-nugroho-unsplash.jpg");
     background-size: cover;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    position: relative;
     width: 500px;
     height: 100%;
 }
 
 .title {
+    position: absolute;
+    bottom: 50%;
     display: flex;
     justify-content: center;
     font-family: NorseBold;
@@ -44,6 +47,13 @@ main {
     width: 100%;
 }
 
+.credit {
+    color: gray;
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+}
+
 .formPanel {
     display: flex;
     flex-direction: column;
@@ -51,6 +61,24 @@ main {
     background-color: rgb(249, 250, 251, 0.5);
     width: 800px;
     height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    max-width: 600px;
+    padding: 50px 30px;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    height: 100%;
+    font-size: 15px;
 }
 
 .formContainer {
@@ -123,23 +151,9 @@ button:hover {
     opacity: 0.8;
 }
 
-header {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 30px;
-    max-width: 600px;
-    padding: 50px 30px;
-    height: 100%;
-}
 
-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px;
-    height: 100%;
-    font-size: 15px;
-}
+
+
 
 a {
     text-decoration: none;
