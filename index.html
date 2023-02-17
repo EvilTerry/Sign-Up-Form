@@ -24,30 +24,31 @@
             <div class="formContainer">
                 <p>Let's do this!</p>
                 <form action="" method="post" id="register">
-                    <p>
+                    <div>
                         <label for="first_name">FIRST NAME*</label>
                         <input type="text" name="first_name" id="first_name" required/>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label for="last_name">LAST NAME*</label>
                         <input type="text" name="last_name" id="last_name" required/>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label for="email">EMAIL*</label>
                         <input type="email" name="email" id="email" required/>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label for="telephone">PHONE NUMBER</label>
                         <input type="tel" name="telephone" id="telephone"/>
-                    </p>
-                    <p class="passwordError">
+                    </div>
+                    <div>
                         <label for="password">PASSWORD*</label>
                         <input type="password" name="password" id="password" onkeyup="check();" required/>
-                    </p>
-                    <p>
+                        <div class="error_msg"></div>
+                    </div>
+                    <div>
                         <label for="confirm_password">CONFIRM PASSWORD*</label>
                         <input type="password" name="confirm_password" id="confirm_password" onkeyup="check();" required/>
-                    </p>
+                    </div>
                     
                 </form>
             </div>
